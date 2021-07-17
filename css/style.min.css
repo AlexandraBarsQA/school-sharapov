@@ -407,9 +407,6 @@ p.questions__subtitle {
 .life-slider.swiper-container {
   position: relative;
   width: 42vw; }
-  @media (max-width: 1080px) {
-    .life-slider.swiper-container {
-      width: 100%; } }
 
 .life-slider__list.swiper-wrapper {
   width: 100%;
@@ -426,6 +423,7 @@ p.questions__subtitle {
   @media (max-width: 1080px) {
     .life-slider__item img {
       display: block;
+      width: 100%;
       margin: 0 auto; } }
 
 .life-slider__list p {
