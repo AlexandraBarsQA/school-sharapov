@@ -262,9 +262,7 @@ input[name="toggle"] {
   -moz-column-gap: 7vw;
        column-gap: 7vw;
   padding-top: 48px;
-  padding-bottom: 29px;
-  outline: 2px solid blue;
-  background-color: yellow; }
+  padding-bottom: 29px; }
   @media (max-width: 1080px) {
     .preview-content__wrap {
       grid-template-columns: 1fr; } }
@@ -313,9 +311,7 @@ input[name="toggle"] {
   margin-bottom: 25px; }
 
 .preview-content__item {
-  margin-bottom: 69px;
-  outline: 5px solid red;
-  background-color: orange; }
+  margin-bottom: 69px; }
   @media (max-width: 767px) {
     .preview-content__item {
       margin-bottom: 45px; } }
@@ -323,9 +319,6 @@ input[name="toggle"] {
 @media (max-width: 580px) {
   .preview-content__list:nth-child(2) .preview-content__item {
     margin-bottom: 0; } }
-
-.preview-content__list {
-  background-color: pink; }
 
 .headline {
   font-family: "Minion-Pro", "Times", serif;
@@ -407,24 +400,24 @@ p.questions__subtitle {
 .life-slider.swiper-container {
   position: relative;
   width: 42vw; }
+  @media (max-width: 1080px) {
+    .life-slider.swiper-container {
+      width: 89vw; } }
 
 .life-slider__list.swiper-wrapper {
   width: 100%;
-  overflow: hidden;
-  outline: 5px solid green; }
+  overflow: hidden; }
 
 .life-slider__item.swiper-slide {
-  width: 100%; }
+  max-width: 100%; }
 
 .life-slider__item img {
-  position: relative;
   -o-object-fit: cover;
      object-fit: cover; }
   @media (max-width: 1080px) {
     .life-slider__item img {
       display: block;
-      width: 100%;
-      margin: 0 auto; } }
+      width: 100%; } }
 
 .life-slider__list p {
   display: block;
@@ -454,14 +447,20 @@ p.questions__subtitle {
   @media (max-width: 1080px) {
     .life-slider__toggle {
       bottom: -10px; } }
-  @media (max-width: 680px) {
+  @media (max-width: 767px) {
     .life-slider__toggle {
       display: none; } }
 
 .life-slider__toggle--prev {
-  right: 4.1vw;
+  left: 80%;
   background-image: url("../img/arrow-slider.png");
   transform: scaleX(-1); }
+  @media (max-width: 1600px) {
+    .life-slider__toggle--prev {
+      left: 76%; } }
+  @media (max-width: 1080px) {
+    .life-slider__toggle--prev {
+      left: 84%; } }
 
 .life-slider__toggle--next {
   right: 0;
