@@ -793,7 +793,16 @@ a.sidenav__link-active {
       margin-bottom: 30px; } }
 
 .content-inner p {
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 1.8vw; }
+  @media (max-width: 680px) {
+    .content-inner p {
+      margin-bottom: 18px; } }
+
+.content-inner--document p,
+.content-inner--questions p,
+.content-inner--teacher p {
+  margin-bottom: 0; }
 
 .content-inner__marker-list {
   list-style-type: disc;
@@ -864,6 +873,8 @@ a.sidenav__link-active {
 
 .content-inner__list a {
   padding-left: 0; }
+  .content-inner__list a:visited {
+    color: #787877; }
 
 .content-inner__list li::before {
   position: absolute;
@@ -902,6 +913,72 @@ a.sidenav__link-active {
     .content-inner--document .content-inner__list li::before {
       left: 0;
       background-size: 75% auto; } }
+
+.form-user {
+  margin-top: 3.23vw; }
+
+.form-user > p {
+  padding-right: 23vw; }
+  @media (max-width: 767px) {
+    .form-user > p {
+      padding-right: 0; } }
+
+.form-user__filter {
+  max-width: 872px;
+  margin-top: 48px; }
+
+.form-user__field {
+  margin-bottom: 20px; }
+
+.form-user__filter input,
+.form-user__filter textarea {
+  font-family: inherit;
+  font-size: clamp(20px, 1.5vw, 25px);
+  color: #336699;
+  border: 1px solid #7b7b7b;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 16px;
+  padding-bottom: 16px; }
+
+.form-user__filter input {
+  width: 623px; }
+  @media (max-width: 680px) {
+    .form-user__filter input {
+      width: 100%; } }
+
+.form-user__filter textarea {
+  width: 100%;
+  min-height: 282px;
+  resize: vertical; }
+
+.form-user__filter textarea::-moz-placeholder {
+  color: #336699; }
+
+.form-user__filter textarea::placeholder {
+  color: #336699; }
+
+p.form-user__note {
+  margin-top: 2vw;
+  margin-bottom: 2.6vw; }
+
+.form-user input[type="submit"] {
+  display: block;
+  width: 285px;
+  height: 70px;
+  font-family: inherit;
+  font-size: clamp(20px, 1.5vw, 25px);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #a46c2d;
+  border: none;
+  margin-left: auto;
+  padding: 12px;
+  cursor: pointer; }
+  @media (max-width: 580px) {
+    .form-user input[type="submit"] {
+      width: 100%; } }
 
 .page-footer__right,
 .page-footer__right a {
