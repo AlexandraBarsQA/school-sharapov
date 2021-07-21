@@ -72,6 +72,10 @@ input[name="toggle"] {
   --basic-blue: #4ac9dc;
   --back-input: #23413f; }
 
+@media (max-width: 380px) {
+  .page__body {
+    overflow-x: hidden; } }
+
 .page-header {
   width: 100%;
   background-image: url("../img/pattern-header.jpg");
@@ -114,8 +118,7 @@ input[name="toggle"] {
 
 .navigation {
   display: grid;
-  grid-template-columns: -webkit-max-content 1fr;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding-top: 33px;
   padding-left: 8.3vw;
@@ -131,6 +134,9 @@ input[name="toggle"] {
     .navigation__contact {
       margin-left: 0;
       margin-top: 2.7vw; } }
+  @media (max-width: 580px) {
+    .navigation__contact {
+      margin-top: 0; } }
 
 .navigation__contact a {
   font-family: "Minion-Pro", "Times", serif;
@@ -147,7 +153,18 @@ input[name="toggle"] {
   font-variant: small-caps; }
 
 .logo {
-  max-width: 481px; }
+  max-width: 481px;
+  height: 129px;
+  background-image: url("../img/logo.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  cursor: pointer; }
+  @media (max-width: 480px) {
+    .logo {
+      height: 110px; } }
+  @media (max-width: 380px) {
+    .logo {
+      height: 85px; } }
 
 .main-nav {
   display: grid;
